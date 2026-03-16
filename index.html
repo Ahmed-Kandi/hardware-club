@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="logo">&#9113; Hardware Club</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#members">Officers</a></li>
+        <li><a href="#join">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>We Build Things.</h1>
+      <p>At the HHS Hardware Club, we design, wire, and build real hardware projects.</p>
+      <a href="#join" class="btn">Join the Club</a>
+    </div>
+    <div class="hero-art">
+      <div class="circuit-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>What We Do</h3>
+        <p>We meet bi-weekly to work on electronics and embedded systems. No experience needed!</p>
+      </div>
+      <div class="card">
+        <h3>What You'll Learn</h3>
+        <p>Circuit design, Arduino & Raspberry Pi programming, and how to bring an idea from concept to prototype.</p>
+      </div>
+      <div class="card">
+        <h3>Competitions</h3>
+        <p>During the second semester, we hold a competition with teams working towards making the best project!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <h2>Projects</h2>
+    <div class="no-projects">
+      <p>No projects yet; we're just getting started!</p>
+      <p>Projects kick off in the second semester. Check back then to see what we've been building.</p>
+    </div>
+  </section>
+
+  <!-- OFFICERS -->
+  <section id="members" class="section">
+    <h2>Officers</h2>
+    <div class="members-grid">
+      <div class="member">
+        <div class="avatar" style="background:#4f8ef7;">AK</div>
+        <h4>Ahmed Kandil</h4>
+        <p>President</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section id="join" class="section alt">
+    <h2>Join Us</h2>
+    <p class="section-sub">Meetings are every <strong>[UNDECIDED]</strong> in <strong>Room [MR LEE'S MAYBE?]</strong>. All skill levels welcome.</p>
+    <form class="join-form" onsubmit="handleSubmit(event)">
+      <input type="text" id="f-name" name="name" placeholder="Your Name" required />
+      <input type="email" id="f-email" name="email" placeholder="School Email" required />
+      <select id="f-grade" name="grade">
+        <option value="">Grade Level</option>
+        <option>9th Grade</option>
+        <option>10th Grade</option>
+        <option>11th Grade</option>
+        <option>12th Grade</option>
+      </select>
+      <textarea id="f-experience" name="experience" placeholder="Any experience with electronics or programming? (optional)"></textarea>
+      <button type="submit" class="btn">Send Interest Form</button>
+    </form>
+    <div id="form-success" class="form-success" style="display:none;">
+      Thanks! Make sure to keep an eye on your email, as we will contact you there.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&#9113; Hardware Club &mdash; Building the future, one circuit at a time.</p>
+    <p>Contact us: <a href="mailto:akandil249@student.fuhsd.org">akandil249@student.fuhsd.org</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
